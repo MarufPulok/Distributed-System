@@ -72,6 +72,7 @@ public class ClientHandler implements Runnable {
                 while (true) {
                     String s = input.nextLine();
                     System.out.println(s);
+                    //update, notify
                     if (s.equalsIgnoreCase("all")) {
                         String messageToSend = input.nextLine();
                         for (ClientHandler clientHandler : clientHandlers) {
